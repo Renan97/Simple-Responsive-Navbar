@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(-90deg, rgb(54, 82, 240), rgb(0, 39, 124));
+  height: 100vh;
+  width: 100vw;
+}
+.parent-login {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.img-logo {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: -450px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.main-login-border {
+  height: 300px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -100px;
+  right: 0;
+}
+
+.parent-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  margin: 30px 20px;
+}
+.parent-animation > input[type="text"] {
+  border: none;
+  border-bottom: 2px solid red;
+  outline: none;
+  height: 25px;
+  width: 90%;
+  margin: 0, 0, 0, 0;
+  color: black;
+  background: transparent;
+}
+
+.underline-animation {
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: black;
+}
+.parent-animation > input[type="text"]:focus + .underline-animation {
+  left: 0;
+}
+
+.btn-login {
+  width: 60%;
+  height: 30px;
+  margin: auto;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
